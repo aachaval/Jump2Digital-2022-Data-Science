@@ -30,8 +30,13 @@ The model is used to predict the label for the test dataset. The result is in th
 To resolve the problem, i used the technical package:
 
 *pycharm*
+
 *python*
+
 *pandas*
+
 *scikit-learn*
+
 *matplotlib*
+
 *seaborn*
