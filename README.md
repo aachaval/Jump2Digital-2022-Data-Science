@@ -11,19 +11,18 @@ The objective is to carry out a predictive model that allows to know the type of
 1 corresponds to Moderate air quality
 2 corresponds to Dangerous air quality
 We face a multiclass classification problem.
-The problem is solved on the notebook app.py
 
 
 ## Analysis
-We have 8 features, all numerical, corresponding to the parameters measured by the different sensors. The training dataset has 2100 records and the test dataset 900. The distribution between the 3 labels is balanced: 33% of the records for each label. The features are standardized. We normalize them too to put them all on the same scale from -1 to 1. 3 features have almost no correlation with the target: feature7, feature8, feature4. The feature importance graph shows us the same thing. The decision is made not to remove them because 2 percentage points of f1_score are lost by removing them.
+We have 8 features, all numerical, corresponding to the parameters measured by the different sensors. The training dataset has 2100 records and the test dataset 900. The distribution between the 3 labels is balanced: 33% of the records for each label. The features are standardized. 
 
 
 ## Solution
-I have trained a ramdom forest model. To do so, I have reserved 30% of the train dataset to measure the model performance.
+I have trained a ramdom forest model. To do so, I have reserved 25% of the train dataset to measure the model performance.
 
 
 ## Results
-The result for the final f1_score for the ramdom forest model is 91.54%.
+The result for the final f1_score for the ramdom forest model is 89%.
 The model is used to predict the label for the test dataset. The result is in the csv-file predictions.csv and the json-file predictions.json
 
 
